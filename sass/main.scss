@@ -1,0 +1,123 @@
+@font-face {
+  font-family: "Heebo";
+  src: url("/fonts/Heebo-VariableFont_wght.ttf") format("ttf");
+
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 21px;
+  font-family: "Heebo";
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+.header {
+  height: 80px;
+  background: black;
+  display: flex;
+  justify-content: space-between;
+  color: #ffffff;
+}
+
+.layout {
+  height: calc(100% - 60px);
+  background: #cccccc;
+  display: flex;
+  justify-content: center;
+  padding: 60px 60px 0px 60px;
+
+}
+
+.content {
+  max-width: 1200px;
+  width: 100%;
+
+}
+
+
+.white-black-square{
+  display: flex;
+  height: 468px;
+
+  &>*:first-child{
+    width: 34%;
+    background: white;
+  }
+  &>*:last-child{
+    width: 66%;
+    background: #000000;
+    display: flex;
+    align-items: flex-end;
+
+  }
+}
+.blue-square{
+  height: 34px;
+  background: #3fa9f5;
+  text-align: center;
+  width: 100%;
+}
+.content-title{
+  display: flex;
+  justify-content: flex-end;
+  text-align: right;
+}
+.blue-red-square {
+  width: 68px;
+  height: 68px;
+  background: #0071bc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+
+
+
+  .hover-text {
+    display: none;
+  }
+  &:hover {
+    background: #ff1d25;
+
+    .nonhover-text {
+      display: none;
+    }
+
+    .hover-text {
+      display: block;
+    }
+
+  }
+}
+.spark, .rspark{
+  font-size: 42px;
+  color: #999999;
+}
+.live-red, .rlive-red{
+  font-size: 18px;
+  color: #ff0000;
+}
+.left-boarder, .rleft-boarder, .events, .revents{
+  font-size: 14px;
+  color: #999999;
+}
+.line, .rline{
+  font-size: 48px;
+  color: #999999;
+}
+.left-top{
+  display: flex;
+
+}
+
+.right-top{
+  display: flex;
+
+}
